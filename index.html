@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up</title>
   <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="side-image">
@@ -29,31 +29,32 @@
       <div class="lines line-1">
         <div class="first-name">
           <label for="first-name">First Name:</label>
-          <input type="text" id="first-name" name="first-name">
+          <input type="text" id="first-name" name="first-name" required placeholder="First Name">
         </div>
         <div class="last-name">
           <label for="last-name">Last Name:</label>
-          <input type="text" id="last-name" name="last-name">
+          <input type="text" id="last-name" name="last-name" required placeholder="Last Name">
         </div>
       </div>
       <div class="lines line-2">
         <div class="email">
           <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
+          <input type="email" name="email" id="email" required placeholder="Email">
         </div>
         <div class="number">
           <label for="number">Phone Number:</label>
-          <input type='tel' name="number" id="number">
+          <input type='tel' name="number" id="number" pattern="[0-9]" required placeholder="Phone Number">
         </div>
       </div>
       <div class="lines line-3">
         <div class="password">
           <label for="password">Password:</label>
-          <input type="password" name="password" id="password">
+          <input type="password" name="password" id="password" required placeholder="Password">
         </div>
         <div class="confirmation">
-          <label for="con-pass">Confirm Password</label>
-          <input type="password" name="con-pass" id="con-pass">
+          <label for="con-pass">Confirm Password:</label>
+          <input type="password" name="con-pass" id="con-pass" required>
+          <span></span>
         </div>
       </div>
     </div>

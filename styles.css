@@ -4,6 +4,7 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
+  font-weight: 600;
 }
 body{
   height: 100vh;
@@ -31,7 +32,7 @@ body{
 .header span{
   color: white;
   font-size: 3rem;
-  font-weight: 600;
+  
 }
 .citation{
   position: absolute;
@@ -43,4 +44,74 @@ body{
 }
 .form{
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info{
+  margin-top:-100px;
+  padding: 30px;
+  font-size: 1.2rem;
+}
+.info p:first-child{
+  margin-bottom: 10px;
+}
+.inputs{
+  padding-left: 30px;
+}
+.form-header{
+  margin-bottom: 10px;
+}
+.form-header h1{
+  font-size: 1.4rem;
+}
+.lines{
+  display: flex;
+  gap: 100px;
+  margin-bottom: 10px;
+}
+.lines div{
+  display: flex;
+  flex-direction: column;
+}
+.lines div input{
+  width:250px;
+  margin-top:3px;
+  padding: 2px;
+  font-size: 1rem;
+}
+input:invalid:not(:placeholder-shown):not(:focus){
+  border: 2px solid red;
+}
+input:valid:not(:placeholder-shown):not(:focus){
+  border: 2px solid green;
+}
+#con-pass{
+  border: 1px solid gray;
+}
+.false-confirmation{
+  position: relative;
+}
+.false-confirmation::after{
+  content: 'Passwords do not match';
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -20px;
+}
+.lines div input:focus{
+  border: 2px solid blue;
+  outline: none;
+}
+.btn{
+  padding-left:30px;
+}
+.btn button{
+  margin:10px 0 16px 0;
+  font-size: 1rem;
+  padding:2px 4px;
+  cursor: pointer;
+  background-color: darkcyan;
+  color: white;
+  border: none;
 }
