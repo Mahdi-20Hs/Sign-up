@@ -8,14 +8,14 @@ confirmation.addEventListener('input', () => {
 
     if(password.value === confirmation.value){
       falseConfirmation.classList.remove('false-confirmation');
-      confirmation.setAttribute('style', 'border:2px solid green')
+      confirmation.setAttribute('style', 'border:2px solid #00FFAB')
     }else{
-      confirmation.setAttribute('style', 'border:2px solid red');
+      confirmation.setAttribute('style', 'border:2px solid #FF0000');
       falseConfirmation.classList.add('false-confirmation');
     }
 
   }else{
-    confirmation.setAttribute('style', 'border:1px solid gray');
+    confirmation.setAttribute('style', 'border:2px solid white');
     falseConfirmation.classList.remove('false-confirmation');
   }
 })

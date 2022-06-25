@@ -4,7 +4,6 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
-  font-weight: 600;
 }
 body{
   height: 100vh;
@@ -15,6 +14,7 @@ body{
   background-image: url(./assets/pexels-andre-furtado-2917182.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(90%);
   text-align: center;
   position: relative;
 }
@@ -29,11 +29,13 @@ body{
 .img{
   filter: invert(100%) sepia(9%) saturate(3297%) hue-rotate(246deg) brightness(120%) contrast(108%);
   margin-right: 5px;
+  width: 60px;
+  height: auto;
 }
 .header span{
   color: white;
   font-size: 3rem;
-  
+  font-weight: 600;
 }
 .citation{
   position: absolute;
@@ -49,12 +51,13 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1B2430;
+  background-color: rgb(36 40 42);
+  color:white;
+  font-size: 1.3rem;
 }
 .info{
   margin-top:-100px;
   padding: 30px;
-  font-size: 1.2rem;
 }
 .info p:first-child{
   margin-bottom: 10px;
@@ -66,55 +69,70 @@ body{
   margin-bottom: 10px;
 }
 .form-header h1{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .lines{
   display: flex;
   gap: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 .lines div{
   display: flex;
   flex-direction: column;
 }
 .lines div input{
-  width:250px;
+  width:300px;
   margin-top:3px;
-  padding: 2px;
-  font-size: 1rem;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 16px;
 }
 input:invalid:not(:placeholder-shown):not(:focus){
-  border: 2px solid red;
+  border: 2px solid #FF0000;
 }
 input:valid:not(:placeholder-shown):not(:focus){
-  border: 2px solid green;
+  border: 2px solid #00FFAB;
 }
-#con-pass{
-  border: 1px solid gray;
-}
+
 .false-confirmation{
   position: relative;
 }
 .false-confirmation::after{
   content: 'Passwords do not match';
-  color: red;
-  font-size: 0.8rem;
+  color: #FF0000;
+  font-size: 1rem;
   position: absolute;
-  bottom: -20px;
+  bottom: -27px;
+  padding-left: 10px;
+  font-weight: 600;
 }
 .lines div input:focus{
-  border: 2px solid blue;
   outline: none;
 }
 .btn{
   padding-left:30px;
 }
 .btn button{
-  margin:10px 0 16px 0;
-  font-size: 1rem;
+  margin:20px 0 20px 0;
+  font-size: 1.1rem;
   padding:2px 4px;
   cursor: pointer;
-  background-color: darkcyan;
+  background-color: #c10230;
   color: white;
-  border: none;
+  border: 1px solid #c10230;
+  border-radius: 16px;
+  padding: 5px 10px;
+  transition-duration: 0.3s;
+}
+.btn button:hover{
+  background-color: #a90229;
+  border-color: #a90229;
+}
+.btn span{
+  color: #c10230;
+  font-weight: 600;
+  cursor: pointer;
 }
