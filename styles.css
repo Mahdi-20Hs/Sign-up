@@ -11,15 +11,16 @@ body{
   display: flex;
 }
 .side-image{
-  width: 40%;
-  background-image: url(./assets/pexels-syed-qaarif-andrabi-12495614.jpg);
+  width: 35%;
+  background-image: url(./assets/pexels-andre-furtado-2917182.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   position: relative;
 }
 .side-image .header{
   margin-top: 30%;
-  background-color: rgba(0, 0, 0, 0.544);
+  background-color: rgba(0, 0, 0, 0.606);
   height: 100px;
   display: flex;
   align-items: center;
@@ -39,14 +40,16 @@ body{
   bottom: 0px;
   right: 0px;
   text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.606);
   color: gray;
-  margin: 0 5px 3px 0;
+  padding: 2px 4px;
 }
 .form{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #1B2430;
 }
 .info{
   margin-top:-100px;

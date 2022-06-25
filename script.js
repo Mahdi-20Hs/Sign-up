@@ -4,7 +4,7 @@ const falseConfirmation = document.querySelector('#con-pass + span');
 
 
 confirmation.addEventListener('input', () => {
-  if(password.value !== '' && confirmation.value !== ''){
+  if(password.value !== ''){
 
     if(password.value === confirmation.value){
       falseConfirmation.classList.remove('false-confirmation');
@@ -13,7 +13,7 @@ confirmation.addEventListener('input', () => {
       confirmation.setAttribute('style', 'border:2px solid red');
       falseConfirmation.classList.add('false-confirmation');
     }
-    
+
   }else{
     confirmation.setAttribute('style', 'border:1px solid gray');
     falseConfirmation.classList.remove('false-confirmation');
